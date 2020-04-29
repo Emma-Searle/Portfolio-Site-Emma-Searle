@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="592px" height="59px" viewBox="0 0 592 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Logo1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="49.3558249%" x2="43.1519501%" y2="49.8711518%" id="linearGradient-1">
+            <stop stop-color="#E43397" offset="0%"></stop>
+            <stop stop-color="#E43397" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="AutumnChant, Autumn Chant" font-size="51" font-weight="normal">
+        <text id="Emma-Searle" stroke="url(#linearGradient-1)" fill="#E43397">
+            <tspan x="5.1425" y="56">Emma Searle</tspan>
+        </text>
+    </g>
+</svg>
