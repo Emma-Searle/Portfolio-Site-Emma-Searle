@@ -6,8 +6,13 @@ Text Colour (Dark Blue): #121640;
 Colour (Blue): #4C0BD1;
 Colour (Light Pink): #FFF5FA;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: FFFFFF;
+  background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -20,16 +25,16 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: font-family: 'Trirong'!important, serif ;
+  font-family:'Trirong', serif ;
   font-size: 2.75em;
   font-weight: normal;
+  text-align: center;
 }
 
-h2 {
-  font-family: 'Montserrat' !important, sans-serif ;
-  font-size: 2.25em;
-  font-weight: 700;
-}
+h2 {font-family: 'Montserrat', sans-serif ;
+font-size: 2.25em;
+font-weight: 700;}
+
 
 h3 {
   font-size: 1.5em;
@@ -54,11 +59,12 @@ a:visited {
   color: #5271FF;
 }
 
-a:hover{
+a:hover {
   color: #E43397;
   text-decoration: none;
 }
-a:focus{
+
+a:focus {
   color: #E43397;
   text-decoration: none;
 }
@@ -67,10 +73,6 @@ a:active {
   color: #E43397;
   text-decoration: line-through;
 }
-
-
-
-
 
 .button {
   display: inline-block;
@@ -82,25 +84,56 @@ a:active {
   border-bottom: 2px solid #E43397;
   transition: 0.2s opacity;
 }
+
+.container {
+  max-width: 1200px;
+}
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button:active {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #E43397 !important;
   text-transform: uppercase;
   border: 2px solid #E43397;
 }
+
 .button.contact:hover {
   background-color: #E43397;
   color: #ffffff !important;
 }
+
 .button.contact:active {
   background-color: #E43397;
   color: #E43397 !important;
+}
+
+
+/* Layout styling */
+
+.container {
+   max-width: 1200px;
+   padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a; }
+
+  #contact {text-align: center;}
+
+  .logo {
+  max-width: 250px;
 }
