@@ -239,11 +239,11 @@ nav>ul>li>a {
 nav>ul>li>a::after {
   text-transform: uppercase;
   border-radius: 1em;
-  border-top: .1em solid #E43397;
+  border-top: .05em solid #E43397;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: .5em;
+  bottom: .6em;
   left: 0;
   transition: right .4s cubic-bezier(0, .5, 0, 1), border-color .4s ease-out;
 }
