@@ -79,8 +79,14 @@ a:active {
   text-decoration: none;
 }
 
+.item {
+  width: 250px;
+  margin: 5px;
+  position: relative;
+}
+
 .button {
-  display: inline-block;
+    display: inline-block;
   background-color: #F1F3F6;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
@@ -91,6 +97,28 @@ a:active {
   border-top: 2px solid #FFFFFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: 1s opacity;
+}
+
+button:hover {
+    opacity: 0.8;
+  text-decoration: none;;
+}
+
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+  vertical-align: bottom;
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
 }
 
 .button:hover {
@@ -154,19 +182,8 @@ font-size: 1.2em;
   color: #ffffff !important;
 }
 
-@keyframe arrow-move {
-from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-.arrow {
-  animation-duration: 2s;
-  animation-name: arrow-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
 /* Layout styling */
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -280,7 +297,7 @@ header {
   width: 100%;
   box-shadow: 4px 4px 10px 0px rgba(148, 148, 180, 0.75);
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #F1F3F6;
 }
 
 header .container {
