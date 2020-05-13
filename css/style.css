@@ -4,15 +4,17 @@ Primary Colour (Neon Blue): #5271FF;
 Secondary Colour (Pink): #E43397;
 Text Colour (Dark Blue): #121640;
 Background (white): #FFFFFF
+Background (grey): #F1F3F6
 Colour (Blue): #4C0BD1;
 Colour (Light Pink): #FFF5FA;
+
 */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #F1F3F6;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -25,33 +27,33 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: 'Trirong', serif;
-  font-size: 2.75em;
-  font-weight: normal;
+  font-family: 'Lato', serif;
+  font-size: 3.5em;
+  font-weight: 300;
   text-align: center;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 400;
   text-align: left;
 }
 
 h3 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 700;
   text-align: left;
-}
-
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
 }
 
 img {
   width: 100%;
 }
+
+/* =================
+Links and buttons
+====================*/
 
 a {
   color: #5271FF;
@@ -74,18 +76,21 @@ a:focus {
 
 a:active {
   color: #E43397;
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .button {
   display: inline-block;
-  background-color: #E43397;
-  color: #ffffff !important;
+  background-color: #F1F3F6;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #E43397;
-  transition: 1s opacity;
+  font-family: 'Montserrat', sans-serif;
+  color: #E43397 !important;
+  padding: 10px 20px 10px;
+  border-radius: 5px;
+  border-left: 2px solid #FFFFFF;
+  border-top: 2px solid #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 1s opacity;
 }
 
 .button:hover {
@@ -98,21 +103,67 @@ a:active {
   text-decoration: none;
 }
 
-.button.contact {
-  background-color: transparent;
+.messagebutton {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  background-color: #4C0BD1;
   color: #ffffff !important;
-  text-transform: uppercase;
-  border: 2px solid #ffffff;
+text-transform: capitalize;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 1.2em;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.button.contact:hover {
-  background-color: #E43397;
+.messagebutton::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.messagebutton:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.messagebutton:hover::after {
+    opacity: 1;
+}
+
+.messagebutton:active {
+  background-color: #4C0BD1;
   color: #ffffff !important;
 }
 
-.button.contact:active {
-  background-color: #E43397;
-  color: #ffffff !important;
+@keyframe arrow-move {
+from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.arrow {
+  animation-duration: 2s;
+  animation-name: arrow-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 /* Layout styling */
@@ -123,17 +174,53 @@ a:active {
 }
 
 .social-links {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
 
 .social-links li {
   list-style: none;
-  padding: 5px
+  padding: 10px
 }
 
 .social-links li img {
-  width: 50px
+  width: 50px;
+  position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.social-links li img::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.social-links li img:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.social-links li img:hover::after {
+    opacity: 1;
+}
+
+.social-links li img:active {
+  background-color: #4C0BD1;
+  color: #ffffff !important;
 }
 
 .row {
@@ -179,6 +266,12 @@ a:active {
 .contact-icon {
   width: 15%;
   max-width: 75px;
+}
+
+.copyright {
+  font-size: 0.75em;
+  color: #121640;
+  margin-top: 100px;
 }
 
 header {
@@ -272,108 +365,110 @@ nav>ul>li>a:focus::after {
   right: 0;
 }
 
-  nav>ul>li>a:active {
-    text-transform: uppercase;
-    color: #E43397;
-    text-decoration: line-through;
-  }
+nav>ul>li>a:active {
+  text-transform: uppercase;
+  color: #E43397;
+  text-decoration: line-through;
+}
 
+main {
+  padding-top: 80px;
+}
 
-  main {
-    padding-top: 80px;
-  }
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  /* ==============================
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
-  @media only screen and (min-width: 640px) {
-    body {
-      font-size: 18px
-    }
-
-    .col-md-6 {
-      width: 50%;
-    }
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px
   }
 
-  /* ==============================
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* ==============================
 Large devices (1024px or larger)
 ================================= */
-  @media only screen and (min-width: 1024px) {
-    body {
-      font-size: 18px
-    }
-
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px
   }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
+  .col-lg-7 {
+    width: 58.33%;
   }
 
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  .col-lg-5 {
+    width: 41.66%;
   }
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-    to {
-      transform: translate(200px, 50px);
-    }
+/* ==============================*/
+
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  50% {
+    fill: #fcffad;
   }
 
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
+  100% {
+    fill: #f76414;
+  }
+}
 
-    to {
-      transform: translate(100px, 48px);
-    }
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
 
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  to {
+    transform: translate(200px, 50px);
   }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
