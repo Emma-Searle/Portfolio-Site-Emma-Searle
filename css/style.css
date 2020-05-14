@@ -14,7 +14,7 @@ Colour (Light Pink): #FFF5FA;
 }
 
 body {
-  background-color: #F1F3F6;
+  background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -182,6 +182,57 @@ font-size: 1.2em;
   color: #ffffff !important;
 }
 
+.cvbutton {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  background-color: #E43397;
+  color: #ffffff !important;
+text-transform: capitalize;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 1.2em;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cvbutton::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cvbutton:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.cvbutton:hover::after {
+    opacity: 1;
+}
+
+.cvbutton:active {
+  background-color: #E43397;
+  color: #ffffff !important;
+}
+
 /* Layout styling */
 
 .container {
@@ -241,7 +292,9 @@ font-size: 1.2em;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 40px 0;
+  background-color: #F1F3F6;
+  box-shadow: 4px 4px 10px 0px rgba(148, 148, 180, 0.75);
 }
 
 .row::after {
@@ -273,6 +326,22 @@ font-size: 1.2em;
   flex-direction: column;
 }
 
+#cv {
+  text-align: center;
+}
+
+#skills {
+  text-align: left;
+}
+
+#tools .container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-top; 50px;
+  margin-bottom: 50px;
+}
+
+
 .logo {
   width: 40%;
   max-width: 250;
@@ -292,12 +361,14 @@ font-size: 1.2em;
 }
 
 header {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
   box-shadow: 4px 4px 10px 0px rgba(148, 148, 180, 0.75);
   position: fixed;
-  background-color: #F1F3F6;
+  background-color: #FFFFFF;
 }
 
 header .container {
@@ -397,6 +468,87 @@ main {
   padding: 10px;
 }
 
+/* About page */
+.portrait {
+  text-align: center;
+}
+
+/* Animation */
+
+@keyframes color-change {
+from {
+    fill: #F04B56;
+  }
+to {
+    fill: #0fa632;
+  }
+}
+
+.tree {
+  animation-duration: 15s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes sun-color-change {
+from {
+    fill: #ffc400;
+  }
+to {
+    fill: #ff4000;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: sun-color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud1-move {
+  from {transform: translate(-100,50px);}
+  to {transform: translate(100px,50px);}
+}
+
+.cloud1 {
+  animation-duration: 10s;
+  animation-name: cloud1-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud2-move {
+  from {transform: scale(1);}
+  to {transform: scale(0.5);}
+}
+
+.cloud2 {
+  animation-duration: 10s;
+  animation-name: cloud2-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud3-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(-300px,50px);}
+}
+
+.cloud3 {
+  animation-duration: 20s;
+  animation-name: cloud3-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -410,6 +562,7 @@ Medium devices (640px and larger)
   }
 }
 
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -431,61 +584,4 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-/* ==============================*/
-
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
