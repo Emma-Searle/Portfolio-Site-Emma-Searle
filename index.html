@@ -24,10 +24,10 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="header-container">
       <nav>
         <ul>
-          <li><a href="#work">Work</a></li>
+          <li><a href="my-work">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -36,11 +36,14 @@
   </header>
 
   <main>
-    <div id="about-blurb" class="container">
-      <img src="./img/logos/Logo2.svg" alt="logo" media="(max-width:700px)">
+    <div id="about-blurb">
+      <div class="container">
+      <img src="./img/logos/Logo2.png" alt="logo" media="(max-width:700px)">
       <h1><span>UX Designer | Londoner</span></h1>
+        <div id="my-work"></div>
       <p>Matchmaker-turned-UX-designer, well-versed in opening people’s eyes to solutions they may have not considered. Great at identifying people’s needs by gathering feedback and providing solutions based on expertise. Applying skills as a UX
         designer to help bring positivity to people’s lives through great design! </p>
+</div>
     </div>
 
     <div id="work" class="container">
@@ -48,9 +51,11 @@
 
       <div class="row">
         <div class="column col-md-6 col-lg-7">
+              <div class=".thumbnail-image">
           <picture>
             <source srcset="./img/ink tank/HP.inktank.mobile.png">
-            <img src="./img/ink tank/HP.inktank.desktop.jpg" width="300px" height="220px" alt="Ink Tank">
+            <img src="./img/ink tank/HP.inktank.desktop.jpg" alt="Ink Tank">
+          </div>
           </picture>
         </div>
 
@@ -58,17 +63,23 @@
           <h2>Ink Tank</h2>
           <p>Ink Tank is a responsive web app which gives design ideas to people that are thinking of getting a new tattoo and allows them to find an artist to complete the work.
           </p>
-          <a href="#" class="button">
-            View Project </a>
+          <div class="wrapper">
+            <div class="item">
+              <a class="button" href="#">View project
+                <img src="./img/icons/right-arrow.svg" class="fa fa-long-arrow-right arrow1" alt="" width="100px" height="30px"></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-6">
+          <div class=".thumbnail-image">
           <picture>
             <source srcset="./img/babel/overview mobile.jpg.jpg">
-            <img src="./img/babel/overview desktop.jpg" alt="Babel App" width="300px" height="220px" alt="Babel">
+            <img src="./img/babel/overview desktop.jpg" alt="Babel App" alt="Babel">
           </picture>
+        </div>
         </div>
         <div class="col-md-6">
           <h2>Babel App</h2>
@@ -76,9 +87,8 @@
           </p>
           <div class="wrapper">
             <div class="item">
-              <button class="button">View project
-                <img src="./img/icons/right-arrow.svg" class="fa fa-long-arrow-right arrow1" alt="" width="100px" height="30px">
-              </button>
+              <a class="button" href="babel.html">View project
+                <img src="./img/icons/right-arrow.svg" class="fa fa-long-arrow-right arrow1" alt="" width="100px" height="30px"></a>
             </div>
           </div>
         </div>
@@ -87,7 +97,7 @@
       <div class="row">
         <div class="column col-md-6 col-lg-7">
           <picture>
-            <svg width="300px" height="220px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 980" enable-background="new 0 0 1400 980" xml:space="preserve">
+            <svg class=".thumbnail-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 980" enable-background="new 0 0 1400 980" xml:space="preserve">
               <rect fill="#FFFFFF" width="1400" height="980" />
               <rect x="710.7" y="705.3" fill="#95D5F2" width="453.3" height="7.7" />
               <g>
@@ -614,8 +624,12 @@
         <div class="column col-md-6 col-lg-5">
           <h2>London Animation</h2>
           <p>This is an example of an SVG image that was animated using keyframes.</p>
-          <a href="#" class="button">
-            View Project </a>
+          <div class="wrapper">
+            <div class="item">
+              <a class="button" href="babel.html">View project
+                <img src="./img/icons/right-arrow.svg" class="fa fa-long-arrow-right arrow1" alt="" width="100px" height="30px"></a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -634,21 +648,21 @@
       <ul class="social-links">
         <li>
           <a href="https://www.linkedin.com/in/emma-searle/" target="_blank" class="contact-icon" style="display:block;">
-            <img src="./img/contact/linkedin.svg" alt="linkedin logo">
+            <img src="./img/contact/linkedin.svg" alt="logo">
           </a>
         </li>
         <li>
           <a href="https://www.behance.net/emmasearle" target="_blank" class="contact-icon" style="display:block;">
-            <img src="./img/contact/behance.svg" alt="behance logo">
+            <img src="./img/contact/behance.svg" alt="logo">
           </a>
         </li>
         <li>
           <a href="https://github.com/Emma-Searle" target="_blank" class="contact-icon" style="display:block;">
-            <img src="./img/contact/github.svg" alt="github logo">
+            <img src="./img/contact/github.svg" alt="logo">
           </a>
         </li>
       </ul>
-      <p class="copyright">Copyright Emma Searle 2020</p>
+      <div class="copyright">Copyright Emma Searle 2020</div>
     </div>
   </footer>
 </body>
