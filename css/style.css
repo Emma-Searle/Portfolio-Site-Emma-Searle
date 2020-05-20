@@ -620,27 +620,27 @@ Medium devices (640px and larger)
   }
 
   .design-process {
-    width:75%;
+    width:80%;
   }
 
   .user-persona {
-      width:75%;
+      width:80%;
   }
 
   .wireframes {
-      width:70%;
+      width:80%;
   }
 .paper-prototype {
-  width:75%;
+  width:80%;
 }
 
 .marvel-prototype {
-    width:70%;
+    width:80%;
 }
 }
 
 .usability-testing {
-  width: 60%;
+  width: 80%;
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -663,7 +663,38 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
 }
+
+.babel-banner {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
 .babel-logo {
   width: 250px;
+}
+
+  .design-process {
+    width:75%;
+  }
+
+  .user-persona {
+      width:75%;
+  }
+
+  .wireframes {
+      width:70%;
+  }
+.paper-prototype {
+  width:75%;
+}
+
+.marvel-prototype {
+    width:70%;
+}
+}
+
+.usability-testing {
+  width: 60%;
 }
 }
