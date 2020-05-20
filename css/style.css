@@ -350,8 +350,7 @@ a:active {
 }
 
 .logo {
-  width: 40%;
-  max-width: 250;
+  width: 170px;
   text-align: left;
   padding: 10px;
 }
@@ -491,11 +490,14 @@ main {
 #babel-main img {
   padding-top: 20px;
   padding-bottom:20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .babel-logo {
   width: 150px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Animation */
@@ -607,6 +609,11 @@ Medium devices (640px and larger)
     font-size: 18px
   }
 
+  .logo {
+    width: 250px;
+    text-align: left;
+    padding: 10px;
+  }
   .col-md-6 {
     width: 50%;
   }
