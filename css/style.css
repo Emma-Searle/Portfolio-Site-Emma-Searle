@@ -486,6 +486,18 @@ main {
   text-align: center;
 }
 
+
+/* Babel page */
+#babel-main img {
+  padding-top: 20px;
+  padding-bottom:20px;
+  text-align: center;
+}
+
+.babel-logo {
+  width: 150px;
+}
+
 /* Animation */
 @keyframes color-change {
   from {
@@ -598,8 +610,38 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+.babel-banner {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+  .babel-logo {
+    width: 200px;
+  }
+
+  .design-process {
+    width:75%;
+  }
+
+  .user-persona {
+      width:75%;
+  }
+
+  .wireframes {
+      width:70%;
+  }
+.paper-prototype {
+  width:75%;
 }
 
+.marvel-prototype {
+    width:70%;
+}
+}
+
+.usability-testing {
+  width: 60%;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -620,5 +662,8 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+.babel-logo {
+  width: 250px;
 }
 }
