@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Ink Tank</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo" style="display:block;">
+        <img src="./img/logos/Logo1.svg" alt="logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#my-work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="inktank-banner">
+      <picture>
+        <source srcset="./img/ink tank/inktank-banner.png">
+        <img src="./img/ink tank/inktank-banner.png" alt="Ink Tank">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h2>Project</h2>
+      <p> Whilst undertaking a UX Design course at CareerFoundry the brief was to create a responsive web app which allowed users to find inspiration for their next tattoo according to preferences like artist and style. 
+      </p>
+      <p>Ink Tank is a source of tattoo inspiration, giving design ideas to people that are thinking of getting a new tattoo and allowing them to find an artist to complete the work.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Challenge</h2>
+      <p>The challenge of this project was to design a responsive web app from scratch within a six month period. Due to the time constraints I focussed on creating three features for the site which included searching for an artist and adding them to
+        a "favourites" list, booking an appointment with an artist and sharing an image with friends. 
+      </p>
+    </div>
+
+    <div class="inktank-design-process">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/design process.png">
+        <img src="./img/ink tank/design process.png" alt="Ink Tank">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h2>Research</h2>
+      <h3>Goals</h3>
+      <ul>
+        <li>To understand how users choose a design for their next tattoo</li>
+        <li>To determine what information users would require about an artist before booking a tattoo with them</li>
+        <li>Documenting user pain points with existing tattoo apps and sites available</li>
+      </ul>
+
+      <h3>Competitor Analysis</h3>
+      <p>I conducted a competitor analysis to understand how current apps and sites were tackling the problem of finding tattoo inspiration and suitable artists to carry out the work, what their strengths and weaknesses were and where there was
+        opportunity for improvement.
+      </p>
+      <p>The competitors I identified for analysis were Tattoodo and Inkhunter. For these competitors I carried out the following:
+      </p>
+      <ul>
+        <li>Competitor profile</li>
+        <li>Marketing profile</li>
+        <li>SWOT profile</li>
+        <li>UX analysis</li>
+      </ul>
+
+      <h3>Strengths & Weaknesses</h3>
+      </div>
+      <div class="inktank-competitor-analysis">
+        <picture style="max-width:100%">
+          <source srcset="./img/ink tank/competitor analysis.png">
+          <img src="./img/ink tank/competitor analysis.png" alt="Competitor Analysis">
+        </picture>
+      </div>
+
+<div class="container">
+      <h3>Problem Statement</h3>
+      <p>People that would like to book a tattoo sitting need a way to find a tattoo artists close by that they can trust because they need to be able to travel to the studio with ease and ensure that the tattoo artist they have chosen is able to
+        carry out their design safely and accurately. </p>
+      <p>We will know this to be true when we see how many users are filtering by location and tattoo artists ratings/reviews.</p>
+
+      <h3>Surveys</h3>
+      <p>In order to ensure that I was addressing the correct problem with my design I carried out a survey to provide me with quantitative feedback. The survey was carried out on the target audience of people over the age of 18 who are considering
+        getting a new tattoo or have been through the process of getting a tattoo, to ensure that the results would be representative of potential users. I invited participants to take part in the study via Slack and my personal network and used
+        Google Forms to carry out the survey.
+      </p>
+      <h4>Results</h4>
+      <ul>
+        <li>Finding the right design and the right artist are of equal importance</li>
+        <li>Extremely important for people to know that an artist is licensed</li>
+        <li>People want to know the artist has good reviews from others that have used them</li>
+        <li>Must know what style of work the artist is most proficient in</li>
+        <li>he majority of people would not travel over 50 miles for a tattoo</li>
+      </ul>
+      </div>
+
+      <div class="inktank-survey-results">
+        <picture style="max-width:100%">
+          <source srcset="./img/ink tank/survey results.png">
+          <img src="./img/ink tank/survey results.png" alt="Survey Results">
+        </picture>
+      </div>
+
+      <div class="container">
+      <p>It's important that all relevant information is presented to the user so that they do not need to leave the site to find it.</p>
+      <h3>Interviews</h3>
+      <p>To gain a qualitative insight into people’s attitudes on the process of getting a new tattoo I created a script and interviewed three people that have been through the process of getting a tattoo. The interviews gave me confidence that I am
+        addressing the right problem with regards to the importance people place on the information about the tattoo artist they have chosen. It was interesting to learn that, other than the information I had suggested in my initial survey, people
+        also place an importance on how much the artist charges for their work.</p>
+    </div>
+
+    <div class="container">
+      <h2>Define</h2>
+      <h3>User Personas</h3>
+      <p>From my initial research I have defined the goals and needs of my potential users and from the results created user personas to represent the different audiences of Ink Tank. These three personas helped me through the development of my site
+        to test assumptions and highlight problems. 
+      </p>
+    </div>
+
+    <div class="inktank-user-personas">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/user personas.png">
+        <img src="./img/ink tank/user personas.png" alt="User Personas">
+      </picture>
+    </div>
+    <div class="container">
+      <h3>User Journeys</h3>
+      <p>In order to visualise the process a user goes through to accomplish a goal, I created a user journey map for each of my personas. Below is an example of David's user journey. 
+      </p>
+    </div>
+
+    <div class="inktank-user-journey">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/user journey.jpg">
+        <img src="./img/ink tank/user journey.jpg" alt="User Journey">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h3>Site Map</h3>
+      <p>Before creating a site map I carried out a content audit on competitor site Tattoodo. This provided me with a base of the type of information required for my site, Ink Tank. Based on my research I created an initial site map. 
+      </p>
+    </div>
+
+    <div class="inktank-site-map">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/site map.png">
+        <img src="./img/ink tank/site map.png" alt="Site Map">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h3>Card Sort</h3>
+      <p>After creating the initial site map I conducted a card sort to understand where my users would expect to find certain content on the Ink Tank site. I conducted the card sort using OptimalSort, with six participants sorting 30 cards.
+      </p>
+      <p>From the dendrogram below, it is clear to see that the participants noticeably defined 5 groups from the card sort - settings, login, mood board, tattoo style and tattooist profile. These groups seem to be inline with my original
+        sitemap, however, looking further down the dendrogram there seems to be less agreement on where some items should be placed, for example finding a tattooist, booking an appointment and paying a deposit.
+      </p>
+      </div>
+
+      <div class="inktank-dendrogram">
+        <picture style="max-width:100%">
+          <source srcset="./img/ink tank/card sort dendrogram.png">
+          <img src="./img/ink tank/card sort dendrogram.png" alt="Dendrogram">
+        </picture>
+      </div>
+
+        <div class="container">
+      <p>From the similarity matrix below (right) it seems that finding a tattooist was often grouped with “keyword search” suggesting that users will perhaps want to type in artist details, something I should consider when planning the content of my
+        pages.
+      </p>
+    </div>
+    <div class="inktank-similarity-matrix">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/card sort similarity matrix.png">
+        <img src="./img/ink tank/card sort similarity matrix.png" alt="Similarity Matrix">
+      </picture>
+    </div>
+    <div class="container">
+      <p>I also noticed that “booking an appointment” and “viewing appointment details” were often grouped together with “finding a tattooist”. As a result of this finding I feel that I should adjust my sitemap by linking the tattooist to the booking
+        details page.
+      </p>
+    </div>
+    <div class="inktank-site-map1">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/site map 1.png">
+        <img src="./img/ink tank/site map 1.png" alt="Site Map 1">
+      </picture>
+    </div>
+
+    <div class="inktank-site-map2">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/site map 2.png">
+        <img src="./img/ink tank/site map 2.png" alt="Site Map 2">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h2>Design & Testing</h2>
+      <h3>Sketching</h3>
+      <p>After sketching low-fidelity wireframes for various pages of the Ink Tank site I put together paper prototypes of the three core features of the site. Below is an example of the paper prototype of booking a tattoo appointment. 
+      </p>
+    </div>
+
+    <div class="inktank-low-fidelity-prototype">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/low-fidelity prototype.jpg">
+        <img src="./img/ink tank/low-fidelity prototype.jpg" alt="Low-Fidelity Prototype">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h3>High-Fidelity Prototype</h3>
+      <p>I used Sketch to create high-fidelity wireframes of the three functions of my site. I put these together to create a high-fidelity prototype that I could use for testing these functions with my target audience. 
+      </p>
+      <p>Below is an example of a high-fidelity prototype for booking a tattoo appointment. As you can see in comparison with my low-fidelity prototype I have separated the booking form into more pages so that the user isn't overwhelmed by too much
+        information on each page. The prototype was also designed in black and white to ensure that users were not relying on colours to provide them with information. 
+      </p>
+    </div>
+
+    <div class="inktank-high-fidelity-prototype">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/high-fidelity prototype.jpg">
+        <img src="./img/ink tank/high-fidelity prototype.jpg" alt="High-Fidelity Prototype">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h3>Usability Testing</h3>
+      <p>I carried out a moderated in-person usability test (Mobile Navigation) using Invision. I conducted the test with six participants from my target audience, recruited through my personal network. 
+      </p>
+      <h4>Test Objectives</h4>
+      <ul>
+        <li>Can the user find a suitable artist by setting filters?</li>
+        <li>Is the user able to save an artist to a “favourites” list?</li>
+        <li>How does the user attempt to book an appointment with an artist?</li>
+        <li>Is the user able to share an image with friends?</li>
+      </ul>
+      <p>During the test I identified the following issues... 
+      </p>
+      <p><b>Issue 1:</b> Two out of six participants found the home page confusing as they didn’t find the categories clear.
+      </p>
+      <p><b>Solution:</b> Add instructions to both the search bar and the categories and have only one image to represent each category.
+</p>
+<p><b>Issue 2:</b> Two out of six participants had issues finding the “book session” button
+</p>
+<p><b>Solution:</b> Change shape and position of the button and ensure there is more white space around it
+</p>
+
+<p><b>Issue 3:</b> Two of the six participants tried to search for an artist using the search bar, rather than navigating to the “Artists” tab.
+</p>
+<p><b>Solution:</b> Make the tabs more prominent by highlighting them in a different colour.
+</p>
+
+<p><b>Issue 4:</b>  One of the participants felt confused by the wording of the “view booking” button, as the form she had completed was a booking request.
+</p>
+<p><b>Solution:</b> Change the wording from “view booking” to “view booking request”.
+</p>
+    </div>
+
+    <div class="inktank-usability-testing">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/usability testing.png">
+        <img src="./img/ink tank/usability testing.png" alt="Usability Testing">
+      </picture>
+    </div>
+
+  <div class="container">
+    <h3>Preference Testing</h3>
+    <p>I went on to test the homepage further by carrying out a preference test on the original and the revised design of the homepage using UsabilityHub. After gather responses from 14 participants, the results showed surprisingly that 67% of people preferred the original design, particularly the ability to swipe through images. Those that preferred the revised design found that this version was clearer with less content. I therefore made further changes to the dashboard page, keeping the “swiping” function however using the headings from the revised prototype to give the user more instruction. I also increased the size of the first image of the category and increased the white space around the categories to create more of a differentiation between categories. The image below shows the second revision of the homepage.
+    </p>
+    </div>
+
+    <div class="inktank-preference-testing">
+      <picture style="max-width:100%">
+        <source srcset="./img/ink tank/preference testing.png">
+        <img src="./img/ink tank/preference testing.png" alt="Preference Testing">
+      </picture>
+    </div>
+
+    <div class="container">
+  <h2>Visual Design</h2>
+      <p>The Ink Tank site will have a lot of imagery as one of the reasons people will visit is for inspiration for their new tattoo. In order to make the site clear and not cluttered, white space will be used to separate content. The colour palette will be simple so that attention is not drawn away from the images. 
+    </p>
+      </div>
+
+      <div class="inktank-visual-design">
+        <picture style="max-width:100%">
+          <source srcset="./img/ink tank/visual design.png">
+          <img src="./img/ink tank/visual design.png" alt="Visual Design">
+        </picture>
+      </div>
+
+  </main>
+
+
+
+
+
+  <footer id="contact">
+    <div class="container">
+      <h1> Say Hello!</h1>
+      <p>
+        Do you want to get in touch?
+      </p>
+      <a href="mailto:emmasearle.ux@gmail.com" class="messagebutton">Email Me</a>
+      <p>
+        or connect with me on social
+      </p>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.linkedin.com/in/emma-searle/" target="_blank" class="contact-icon" style="display:block;">
+            <img src="./img/contact/linkedin.svg" alt="logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/emmasearle" target="_blank" class="contact-icon" style="display:block;">
+            <img src="./img/contact/behance.svg" alt="logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Emma-Searle" target="_blank" class="contact-icon" style="display:block;">
+            <img src="./img/contact/github.svg" alt="logo">
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">Copyright Emma Searle 2020</div>
+    </div>
+  </footer>
+</body>
+
+</html>
