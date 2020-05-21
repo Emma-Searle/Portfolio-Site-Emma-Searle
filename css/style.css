@@ -318,7 +318,7 @@ a:active {
 }
 
 #work .row {
-  padding-bottom: 25px;
+  padding: 15px;
 }
 
 #contact {
@@ -487,19 +487,214 @@ main {
 
 
 /* Babel page */
-#babel-main img {
-  padding-top: 20px;
-  padding-bottom:20px;
-  display: flex;
-  align-items: center;
+
+.babel-banner {
+  padding: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .babel-logo {
-  width: 150px;
+  padding-top: 20px;
+  padding-bottom:20px;
   display: flex;
   justify-content: center;
 }
 
+.babel-design-process {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-persona {
+  padding-top: 20px;
+  padding-bottom:20px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-flow {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.wireframes {
+  padding-top: 20px;
+  padding-bottom:20px;
+  display: flex;
+  justify-content: center;
+}
+
+.paper-prototype {
+  padding-top: 20px;
+  padding-bottom:20px;
+  display: flex;
+  justify-content: center;
+}
+
+.marvel-prototype {
+  padding-top: 20px;
+  padding-bottom:20px;
+  display: flex;
+  justify-content: center;
+}
+
+.usability-testing {
+  padding-top: 20px;
+  padding-bottom:20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ink Tank Page */
+
+.inktank-banner {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.inktank-design-process {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.inktank-competitor-analysis {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.inktank-survey-results {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.inktank-user-personas {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.inktank-user-journey {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.inktank-site-map {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-dendrogram {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-similarity-matrix {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-site-map1 {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-site-map2 {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-low-fidelity-prototype {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-high-fidelity-prototype {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+.inktank-usability-testing {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-preference-testing {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
+
+.inktank-visual-design {
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center
+}
 /* Animation */
 @keyframes color-change {
   from {
@@ -617,37 +812,38 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-.babel-banner {
-  padding: 0;
-  width: 100%;
-  margin: 0;
-}
-  .babel-logo {
-    width: 200px;
+
+  .babel-logo picture {
+  max-width: 250px;
   }
 
-  .design-process {
+  .babel-design-process picture{
     width:80%;
   }
 
-  .user-persona {
+  .user-persona picture {
       width:80%;
   }
 
-  .wireframes {
+  .wireframes picture {
       width:80%;
   }
-.paper-prototype {
+.paper-prototype picture {
   width:80%;
 }
 
-.marvel-prototype {
+.marvel-prototype picture {
     width:80%;
 }
+
+.usability-testing picture {
+  width: 80%;
+}
+/*Ink Tank*/
+.inktank-design-process picture{
+  width:80%;
 }
 
-.usability-testing {
-  width: 80%;
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -671,37 +867,33 @@ Large devices (1024px or larger)
     margin-right: auto;
 }
 
-.babel-banner {
-  padding: 0;
-  width: 100%;
-  margin: 0;
-}
-
-.babel-logo {
-  width: 250px;
-}
-
-  .design-process {
+  .babel-design-process picture {
     width:75%;
   }
 
-  .user-persona {
+  .user-persona picture {
       width:75%;
   }
 
-  .wireframes {
+  .wireframes picture {
       width:70%;
   }
-.paper-prototype {
+.paper-prototype picture {
   width:75%;
 }
 
-.marvel-prototype {
+.marvel-prototype picture {
     width:70%;
 }
 }
 
-.usability-testing {
+.usability-testing picture {
   width: 60%;
 }
+
+/* Ink Tank */
+.inktank-design-process picture{
+  width:75%;
+}
+
 }
