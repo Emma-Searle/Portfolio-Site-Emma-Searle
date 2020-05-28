@@ -476,8 +476,7 @@ main {
 }
 
 .thumbnail-image {
-  width: 300px;
-  height: 220px;
+  width: 100%;
 }
 
 /* About page */
