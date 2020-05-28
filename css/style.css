@@ -813,6 +813,11 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .thumbnail-image picture {
+    width: 300px;
+    height: 320px;
+  }
+
   .babel-logo picture {
   max-width: 250px;
   }
@@ -859,6 +864,10 @@ Large devices (1024px or larger)
 
   .col-lg-5 {
     width: 41.66%;
+  }
+
+  .thumbnail-image picture {
+    width: 58.33%;
   }
 
   .container {
