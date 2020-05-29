@@ -475,6 +475,11 @@ main {
   padding: 10px;
 }
 
+.thumbnail-image {
+  width: 100%
+}
+
+
 /* About page */
 .portrait {
   text-align: center;
