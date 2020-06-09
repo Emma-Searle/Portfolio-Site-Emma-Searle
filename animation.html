@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5cec1500ec.js" crossorigin="anonymous"></script>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
@@ -19,12 +20,13 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Babel</title>
+  <title>Animation</title>
 </head>
 
 <body>
   <header>
     <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
       <a href="index.html" class="logo" style="display:block;">
         <img src="./img/logos/Logo1.svg" alt="logo">
       </a>
@@ -33,8 +35,10 @@
           <li><a href="index.html#my-work">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
