@@ -84,30 +84,7 @@ a:active {
   position: relative;
 }
 
-.projectbutton1 {
-  display: inline-block;
-  background-color: #FFFFFF;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  color: #E43397 !important;
-  padding: 10px 20px 10px;
-  border-radius: 5px;
-  border-left: 2px solid #FFFFFF;
-  border-top: 2px solid #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: 1s opacity;
-  display: flex;
-  align-items: center;
-  width: 190px;
-}
-
-.projectbutton1:hover {
-  opacity: 0.8;
-  text-decoration: none;
-  ;
-}
-
-.projectbutton2 {
+.button {
   display: inline-block;
   background-color: #F1F3F6;
   font-weight: 400;
@@ -124,7 +101,7 @@ a:active {
   width: 190px;
 }
 
-.projectbutton2:hover {
+.button:hover {
   opacity: 0.8;
   text-decoration: none;
   ;
@@ -149,22 +126,12 @@ a:active {
   }
 }
 
-.projectbutton2:hover {
+.button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.projectbutton2:active {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.projectbutton1:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.projectbutton1:active {
+.button:active {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -272,6 +239,7 @@ a:active {
 }
 
 /* Layout styling */
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -330,6 +298,18 @@ a:active {
   color: #ffffff !important;
 }
 
+.row {
+  margin: 40px 0;
+  background-color: #F1F3F6;
+  box-shadow: 4px 4px 10px 0px rgba(148, 148, 180, 0.75);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #about-blurb {
   padding: 0 15px;
   display: inline-block;
@@ -337,43 +317,8 @@ a:active {
   text-align: center;
 }
 
-#work h1 {
-  margin-bottom: 0;
-  padding-top: .5em;
-}
-
-.container1 {
-  width: 100%;
-  background-color: #F1F3F6;
-  padding-bottom: 0;
-}
-
-.row1 {
-  background-color: #F1F3F6;
-  padding: 50px;
-}
-
-.row1::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.container2 {
-  width: 100%;
-  background-color: #FFFFFF;
-  padding-bottom: 0;
-}
-
-.row2 {
-  background-color: #FFFFFF;
-  padding: 50px;
-}
-
-.row2::after {
-  content: "";
-  clear: both;
-  display: table;
+#work .row {
+  padding: 15px;
 }
 
 #contact {
@@ -501,7 +446,7 @@ nav>ul>li>a:active {
 }
 
 .navtoggle, .navtoggle.responsive {
-  position: fixed;
+  position: relative;
 }
 
 .navtoggle li .icon {
@@ -511,9 +456,10 @@ nav>ul>li>a:active {
   font-size: 20px;
 }
 
-.navtoggle.responsive li {
+.navtoggle.responsive li  {
   display: block;
 }
+
 
 main {
   padding-top: 59px;
@@ -525,18 +471,20 @@ main {
 }
 
 .thumbnail-image {
-  width: 100%;
+  width: 100%
 }
 
 /* About page */
+
 .portrait {
-  justify-content: center;
+justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
 }
 
 /* Babel page */
+
 .babel-banner {
   padding: 0;
   width: 100%;
@@ -604,6 +552,7 @@ main {
 }
 
 /* Ink Tank Page */
+
 .inktank-banner {
   padding: 0;
   width: 100%;
@@ -877,11 +826,11 @@ Medium devices (640px and larger)
     display: flex;
   }
 
-    nav {
-      display: inline-block;
-      width: 100%;
-      text-align: right;
-    }
+  nav {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+  }
 
   nav>ul {
     margin: 1em 0;
@@ -899,6 +848,10 @@ Medium devices (640px and larger)
     display: none;
   }
 
+  .navtoggle.responsive li  {
+  display: block;
+}
+
   main {
     padding-top: 90px;
   }
@@ -907,11 +860,6 @@ Medium devices (640px and larger)
     width: 250px;
     text-align: left;
     padding: 10px;
-  }
-
-  .logo2 {
-    justify-content: center;
-    display: flex;
   }
 
   .col-md-6 {
