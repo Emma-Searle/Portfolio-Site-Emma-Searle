@@ -463,6 +463,10 @@ nav>ul>li>a:active {
   padding-right: 0;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
 main {
   padding-top: 59px;
 }
