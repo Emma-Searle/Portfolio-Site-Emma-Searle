@@ -446,25 +446,43 @@ nav>ul>li>a:active {
   text-decoration: line-through;
 }
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
   display: none;
 }
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
   display: flex;
+  justify-content: space-between;
 }
 
 .navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
   font-size: 20px;
   padding-right: 0;
 }
 
 .navtoggle.responsive li  {
   display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+padding-bottom: 30px;
+  text-align: right;
+  /* border-bottom: 1px solid #E43397; */
+}
+
+.navtoggle.responsive li a {
+  padding: 0;
+}
+
+.navtoggle.responsive li:first-child  {
+  border: none;
+  text-align: right;
 }
 
 main {
@@ -834,11 +852,11 @@ Medium devices (641px and larger)
     margin: 1em 0;
   }
 
-  .navtoggle li:not(:last-child) {
+  .navtoggle li:not(:first-child) {
     display: inline-block;
   }
 
-  .navtoggle li:last-child {
+  .navtoggle li:first-child {
     display: none;
   }
 
