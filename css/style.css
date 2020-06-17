@@ -444,6 +444,7 @@ header {
   z-index: 9000;
   padding: 10px 0 4px;
   margin: 0;
+  top: 0px;
 }
 
 header .header-container {
@@ -541,6 +542,7 @@ nav>ul>li>a:active {
   display: block;
   padding-bottom: 30px;
   text-align: right;
+
   /* border-bottom: 1px solid #E43397; */
 }
 
