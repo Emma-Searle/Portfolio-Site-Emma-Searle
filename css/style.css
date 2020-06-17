@@ -25,24 +25,23 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-
 h1 {
   font-family: 'Lato', serif;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 300;
   text-align: center;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
   text-align: left;
 }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 700;
   text-align: left;
 }
@@ -234,8 +233,8 @@ a:active {
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 75px;
+  padding-right: 75px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -314,6 +313,10 @@ a:active {
 #work h1 {
   padding-top: 25px;
   margin-bottom: 0;
+}
+
+#about-blurb h2 {
+  text-align: center;
 }
 
 .social-links {
@@ -542,7 +545,6 @@ nav>ul>li>a:active {
   display: block;
   padding-bottom: 30px;
   text-align: right;
-
   /* border-bottom: 1px solid #E43397; */
 }
 
@@ -570,7 +572,8 @@ main {
 
 /* About page */
 .portrait {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Babel page */
@@ -873,31 +876,6 @@ main {
   animation-timing-function: linear;
 }
 
-/* ==============================
-Small devices (under 640px)
-================================= */
-@media only screen and (max-width: 639px) {
-  h1 {
-    font-family: 'Lato', serif;
-    font-size: 2.5em;
-    font-weight: 300;
-    text-align: center;
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.9em;
-    font-weight: 400;
-    text-align: left;
-  }
-
-  h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-align: left;
-  }
-}
 
 /* ==============================
 Medium devices (641px and larger)
@@ -907,6 +885,17 @@ Medium devices (641px and larger)
     font-size: 18px
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
   nav>ul>li {
     display: inline-block;
   }
@@ -932,11 +921,15 @@ Medium devices (641px and larger)
   .logo {
     width: 250px;
     text-align: left;
-    padding: 10px;
   }
 
   main {
     padding-top: 78px;
+  }
+
+  .cvbutton {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .col-md-6 {
