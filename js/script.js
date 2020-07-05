@@ -1,5 +1,5 @@
 function myFunction() {
-console.log("inside menu toggle")
+  console.log('inside menu toggle')
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
     x.className += ' responsive';
@@ -9,11 +9,10 @@ console.log("inside menu toggle")
 }
 
 $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-        $("#header").addClass("active");
-    }
-    else {
-        $("#header").removeClass("active");
-    }
+  var scroll = $(window).scrollTop();
+  if (scroll > 0) {
+    $('#header').addClass('active');
+  } else {
+    $('#header').removeClass('active');
+  }
 });
