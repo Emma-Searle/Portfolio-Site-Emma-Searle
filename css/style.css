@@ -558,7 +558,7 @@ main {
 margin: 20px;
 }
 
-.thumbnail-image img{
+.thumbnail-image img {
   border-radius: 10px;
 }
 
@@ -855,6 +855,13 @@ Medium devices (641px and larger)
     margin: 1em 0;
   }
 
+  .navtoggle.responsive li a {
+    padding: 15px;
+  }
+
+.navtoggle.responsive li {
+  padding: 0;
+}
   .navtoggle li:not(:first-child) {
     display: inline-block;
   }
@@ -870,6 +877,10 @@ Medium devices (641px and larger)
 
   main {
     padding-top: 78px;
+  }
+
+  .project-text-box {
+    margin-left: 20px;
   }
 
   .cvbutton {
@@ -893,51 +904,85 @@ Medium devices (641px and larger)
   display: flex;
   justify-content: center;
   max-width: 80%;
+  margin: 0 auto;
 }
 
 .babel-design-process img {
+  display: flex;
+    justify-content: center;
   max-width: 80%;
+  margin: 0 auto;
 }
 
 .babel-wireframes img {
+  display: flex;
+  justify-content: center;
   max-width: 80%;
+  margin: 0 auto;
 }
 
 .babel-paper-prototype img {
+  display: flex;
+  justify-content: center;
   max-width: 80%;
+  margin: 0 auto;
 }
 
 .babel-marvel-prototype img {
+  display: flex;
+  justify-content: center;
   max-width: 80%;
+  margin: 0 auto;
 }
 
 .babel-usability-testing img {
+  display: flex;
+  justify-content: center;
     max-width: 70%;
+    margin: 0 auto;
 }
 
   /* Ink Tank */
 
   .inktank-design-process img {
+    display: flex;
+  justify-content: center;
     max-width: 90%;
+    margin: 0 auto;
   }
 
   .inktank-competitor-analysis img {
+    display: flex;
+  justify-content: center;
     max-width: 90%;
+    margin: 0 auto;
   }
 
   .inktank-user-personas img {
+    display: flex;
+  justify-content: center;
     max-width: 90%;
+    margin: 0 auto;
   }
 
   .inktank-dendrogram img {
+    display: flex;
+  justify-content: center;
     max-width: 90%;
+    margin: 0 auto;
   }
 
   .inktank-similarity-matrix img {
+    display: flex;
+  justify-content: center;
     max-width: 75%;
+    margin: 0 auto;
   }
   .inktank-visual-design img {
+    display: flex;
+  justify-content: center;
     max-width: 90%;
+    margin: 0 auto;
   }
 
 }
@@ -969,7 +1014,10 @@ Large devices (1024px or larger)
 
   /* Babel */
   .babel-logo img {
+    display: flex;
+  justify-content: center;
     max-width: 250px;
+    margin: 0 auto;
   }
 
 
@@ -978,4 +1026,5 @@ Large devices (1024px or larger)
   display: flex;
   justify-content: center;
   width: 75%;
+  margin: 0 auto;
 }
