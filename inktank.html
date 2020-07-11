@@ -3,12 +3,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
   <!-- Styling -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
- <script src="https://kit.fontawesome.com/5cec1500ec.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5cec1500ec.js" crossorigin="anonymous"></script>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -19,37 +20,36 @@
   <meta name="theme-color" content="#ffffff">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
   <title>Ink Tank</title>
 </head>
 
 <body>
   <header>
     <div id="header">
-        <div class="header-container">
-          <div class="navtoggle" id="myNavtoggle">
-            <a href="index.html" class="logo" style="display:block;">
-              <img src="./img/logos/Logo1.png" alt="logo">
-            </a>
-      <nav>
-        <ul>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-          <li><a href="index.html#my-work" onclick="myFunction()">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="myFunction()">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo" style="display:block;">
+            <img src="./img/logos/Logo1.png" alt="logo">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+              <li><a href="index.html#my-work" onclick="myFunction()">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
   </header>
 
 
   <main>
     <div class="inktank-banner">
       <picture>
-        <source srcset="./img/ink tank/inktank-banner.png">
-        <img src="./img/ink tank/inktank-banner.png" alt="Ink Tank">
+        <source media="(min-width:641px)" srcset="./img/ink-tank/banner-desktop.png">
+        <img src="./img/ink-tank/banner.png" alt="Ink Tank" style="width:100%;">
       </picture>
     </div>
 
@@ -66,13 +66,12 @@
       <p>The challenge of this project was to design a responsive web app from scratch within a six month period. Due to the time constraints I focussed on creating three features for the site which included searching for an artist and adding them to
         a "favourites" list, booking an appointment with an artist and sharing an image with friends. 
       </p>
-    </div>
-
-    <div class="inktank-design-process">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/design process.png">
-        <img src="./img/ink tank/design process.png" alt="Ink Tank">
-      </picture>
+      <div class="inktank-design-process">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/ink-tank/design-process-desktop.png">
+          <img src="./img/ink-tank/design-process.png" alt="Design Process" style="width:auto;">
+        </picture>
+      </div>
     </div>
 
     <div class="container">
@@ -98,25 +97,30 @@
       </ul>
 
       <h3>Strengths & Weaknesses</h3>
-      </div>
       <div class="inktank-competitor-analysis">
-        <picture style="max-width:100%">
-          <source srcset="./img/ink tank/competitor analysis.png">
-          <img src="./img/ink tank/competitor analysis.png" alt="Competitor Analysis">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/ink-tank/competitor-analysis-desktop.png">
+          <img src="./img/ink-tank/competitor-analysis.png" alt="Competitor Analysis" style="width:auto;">
         </picture>
       </div>
+    </div>
 
-<div class="container">
+    <div class="container">
       <h3>Problem Statement</h3>
       <p>People that would like to book a tattoo sitting need a way to find a tattoo artists close by that they can trust because they need to be able to travel to the studio with ease and ensure that the tattoo artist they have chosen is able to
         carry out their design safely and accurately. </p>
       <p>We will know this to be true when we see how many users are filtering by location and tattoo artists ratings/reviews.</p>
+    </div>
 
+    <div class="container">
       <h3>Surveys</h3>
       <p>In order to ensure that I was addressing the correct problem with my design I carried out a survey to provide me with quantitative feedback. The survey was carried out on the target audience of people over the age of 18 who are considering
         getting a new tattoo or have been through the process of getting a tattoo, to ensure that the results would be representative of potential users. I invited participants to take part in the study via Slack and my personal network and used
         Google Forms to carry out the survey.
       </p>
+    </div>
+
+    <div class="container">
       <h4>Results</h4>
       <ul>
         <li>Finding the right design and the right artist are of equal importance</li>
@@ -125,16 +129,15 @@
         <li>Must know what style of work the artist is most proficient in</li>
         <li>he majority of people would not travel over 50 miles for a tattoo</li>
       </ul>
-      </div>
-
       <div class="inktank-survey-results">
-        <picture style="max-width:100%">
-          <source srcset="./img/ink tank/survey results.png">
-          <img src="./img/ink tank/survey results.png" alt="Survey Results">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/ink-tank/survey-results-desktop.png">
+          <img src="./img/ink-tank/survey-results.png" alt="Survey Results" style="width:auto;">
         </picture>
       </div>
+    </div>
 
-      <div class="container">
+    <div class="container">
       <p>It's important that all relevant information is presented to the user so that they do not need to leave the site to find it.</p>
       <h3>Interviews</h3>
       <p>To gain a qualitative insight into people’s attitudes on the process of getting a new tattoo I created a script and interviewed three people that have been through the process of getting a tattoo. The interviews gave me confidence that I am
@@ -148,38 +151,36 @@
       <p>From my initial research I have defined the goals and needs of my potential users and from the results created user personas to represent the different audiences of Ink Tank. These three personas helped me through the development of my site
         to test assumptions and highlight problems. 
       </p>
+      <div class="inktank-user-personas">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/ink-tank/user-personas-desktop.png">
+          <img src="./img/ink-tank/user-personas.png" alt="User Personas" style="width:auto;">
+        </picture>
+      </div>
     </div>
 
-    <div class="inktank-user-personas">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/user personas.png">
-        <img src="./img/ink tank/user personas.png" alt="User Personas">
-      </picture>
-    </div>
     <div class="container">
       <h3>User Journeys</h3>
       <p>In order to visualise the process a user goes through to accomplish a goal, I created a user journey map for each of my personas. Below is an example of David's user journey. 
       </p>
-    </div>
-
-    <div class="inktank-user-journey">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/user journey.jpg">
-        <img src="./img/ink tank/user journey.jpg" alt="User Journey">
-      </picture>
+      <div class="inktank-user-journey">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/ink-tank/user-journey-desktop.png">
+          <img src="./img/ink-tank/user-journey.png" alt="User Journey" style="width:auto;">
+        </picture>
+      </div>
     </div>
 
     <div class="container">
       <h3>Site Map</h3>
       <p>Before creating a site map I carried out a content audit on competitor site Tattoodo. This provided me with a base of the type of information required for my site, Ink Tank. Based on my research I created an initial site map. 
       </p>
-    </div>
-
     <div class="inktank-site-map">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/site map.png">
-        <img src="./img/ink tank/site map.png" alt="Site Map">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/site-map1-desktop.png">
+        <img src="./img/ink-tank/site-map1.png" alt="Original Site Map" style="width:auto;">
       </picture>
+    </div>
     </div>
 
     <div class="container">
@@ -189,44 +190,43 @@
       <p>From the dendrogram below, it is clear to see that the participants noticeably defined 5 groups from the card sort - settings, login, mood board, tattoo style and tattooist profile. These groups seem to be inline with my original
         sitemap, however, looking further down the dendrogram there seems to be less agreement on where some items should be placed, for example finding a tattooist, booking an appointment and paying a deposit.
       </p>
+    <div class="inktank-dendrogram">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/dendrogram-desktop.png">
+        <img src="./img/ink-tank/dendrogram.png" alt="Card Sort Dendrogram" style="width:auto;">
+      </picture>
+    </div>
       </div>
 
-      <div class="inktank-dendrogram">
-        <picture style="max-width:100%">
-          <source srcset="./img/ink tank/card sort dendrogram.png">
-          <img src="./img/ink tank/card sort dendrogram.png" alt="Dendrogram">
-        </picture>
-      </div>
-
-        <div class="container">
+    <div class="container">
       <p>From the similarity matrix below (right) it seems that finding a tattooist was often grouped with “keyword search” suggesting that users will perhaps want to type in artist details, something I should consider when planning the content of my
         pages.
       </p>
-    </div>
     <div class="inktank-similarity-matrix">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/card sort similarity matrix.png">
-        <img src="./img/ink tank/card sort similarity matrix.png" alt="Similarity Matrix">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/similarity-matrix-desktop.png">
+        <img src="./img/ink-tank/similarity-matrix.png" alt="Similarity Matrix" style="width:auto;">
       </picture>
     </div>
+        </div>
+
     <div class="container">
       <p>I also noticed that “booking an appointment” and “viewing appointment details” were often grouped together with “finding a tattooist”. As a result of this finding I feel that I should adjust my sitemap by linking the tattooist to the booking
         details page.
       </p>
-    </div>
-    <div class="inktank-site-map1">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/site map 1.png">
-        <img src="./img/ink tank/site map 1.png" alt="Site Map 1">
-      </picture>
-    </div>
-
     <div class="inktank-site-map2">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/site map 2.png">
-        <img src="./img/ink tank/site map 2.png" alt="Site Map 2">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/site-map2-desktop.png">
+        <img src="./img/ink-tank/site-map2.png" alt="Revised Site Map" style="width:auto;">
       </picture>
     </div>
+    <div class="inktank-site-map3">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/site-map3-desktop.png">
+        <img src="./img/ink-tank/site-map3.png" alt="Revised Site Map" style="width:auto;">
+      </picture>
+    </div>
+        </div>
 
     <div class="container">
       <h2>Design & Testing</h2>
@@ -236,9 +236,9 @@
     </div>
 
     <div class="inktank-low-fidelity-prototype">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/low-fidelity prototype.jpg">
-        <img src="./img/ink tank/low-fidelity prototype.jpg" alt="Low-Fidelity Prototype">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/low-fidelity-prototype-desktop.png">
+        <img src="./img/ink-tank/low-fidelity-prototype.png" alt="Low-Fidelity Prototype" style="width:auto;">
       </picture>
     </div>
 
@@ -252,9 +252,9 @@
     </div>
 
     <div class="inktank-high-fidelity-prototype">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/high-fidelity prototype.jpg">
-        <img src="./img/ink tank/high-fidelity prototype.jpg" alt="High-Fidelity Prototype">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/high-fidelity-prototype-desktop.png">
+        <img src="./img/ink-tank/high-fidelity-prototype.png" alt="High Fidelity Prototype" style="width:auto;">
       </picture>
     </div>
 
@@ -271,58 +271,62 @@
       </ul>
       <p>During the test I identified the following issues... 
       </p>
-      <p><b>Issue 1:</b> Two out of six participants found the home page confusing as they didn’t find the categories clear.
+      <p><b>Issue 1:</b> Two out of six participants found the homepage confusing as they didn’t find the categories clear.
       </p>
       <p><b>Solution:</b> Add instructions to both the search bar and the categories and have only one image to represent each category.
-</p>
-<p><b>Issue 2:</b> Two out of six participants had issues finding the “book session” button
-</p>
-<p><b>Solution:</b> Change shape and position of the button and ensure there is more white space around it
-</p>
+      </p>
+      <p><b>Issue 2:</b> Two out of six participants had issues finding the “book session” button
+      </p>
+      <p><b>Solution:</b> Change shape and position of the button and ensure there is more white space around it
+      </p>
 
-<p><b>Issue 3:</b> Two of the six participants tried to search for an artist using the search bar, rather than navigating to the “Artists” tab.
-</p>
-<p><b>Solution:</b> Make the tabs more prominent by highlighting them in a different colour.
-</p>
+      <p><b>Issue 3:</b> Two of the six participants tried to search for an artist using the search bar, rather than navigating to the “Artists” tab.
+      </p>
+      <p><b>Solution:</b> Make the tabs more prominent by highlighting them in a different colour.
+      </p>
 
-<p><b>Issue 4:</b>  One of the participants felt confused by the wording of the “view booking” button, as the form she had completed was a booking request.
-</p>
-<p><b>Solution:</b> Change the wording from “view booking” to “view booking request”.
-</p>
+      <p><b>Issue 4:</b>  One of the participants felt confused by the wording of the “view booking” button, as the form she had completed was a booking request.
+      </p>
+      <p><b>Solution:</b> Change the wording from “view booking” to “view booking request”.
+      </p>
     </div>
 
     <div class="inktank-usability-testing">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/usability testing.png">
-        <img src="./img/ink tank/usability testing.png" alt="Usability Testing">
-      </picture>
-    </div>
-
-  <div class="container">
-    <h3>Preference Testing</h3>
-    <p>I went on to test the homepage further by carrying out a preference test on the original and the revised design of the homepage using UsabilityHub. After gather responses from 14 participants, the results showed surprisingly that 67% of people preferred the original design, particularly the ability to swipe through images. Those that preferred the revised design found that this version was clearer with less content. I therefore made further changes to the dashboard page, keeping the “swiping” function however using the headings from the revised prototype to give the user more instruction. I also increased the size of the first image of the category and increased the white space around the categories to create more of a differentiation between categories. The image below shows the second revision of the homepage.
-    </p>
-    </div>
-
-    <div class="inktank-preference-testing">
-      <picture style="max-width:100%">
-        <source srcset="./img/ink tank/preference testing.png">
-        <img src="./img/ink tank/preference testing.png" alt="Preference Testing">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/usability-testing-desktop.png">
+        <img src="./img/ink-tank/usability-testing.png" alt="Usability Testing" style="width:auto;">
       </picture>
     </div>
 
     <div class="container">
-  <h2>Visual Design</h2>
-      <p>The Ink Tank site will have a lot of imagery as one of the reasons people will visit is for inspiration for their new tattoo. In order to make the site clear and not cluttered, white space will be used to separate content. The colour palette will be simple so that attention is not drawn away from the images. 
-    </p>
-      </div>
+      <h3>Preference Testing</h3>
+      <p>I went on to test the homepage further by carrying out a preference test on the original and the revised design of the homepage using UsabilityHub. After gather responses from 14 participants, the results showed surprisingly that 67% of
+        people preferred the original design, particularly the ability to swipe through images. Those that preferred the revised design found that this version was clearer with less content. I therefore made further changes to the homepage,
+        keeping the “swiping” function however using the headings from the revised prototype to give the user more instruction. I also increased the size of the first image of the category and increased the white space around the categories to create
+        more of a differentiation between categories. The image below shows the second revision of the homepage.
+      </p>
+    </div>
 
-      <div class="inktank-visual-design">
-        <picture style="max-width:100%">
-          <source srcset="./img/ink tank/visual design.png">
-          <img src="./img/ink tank/visual design.png" alt="Visual Design">
-        </picture>
-      </div>
+    <div class="inktank-preference-testing">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/preference-testing-desktop.png">
+        <img src="./img/ink-tank/preference-testing.png" alt="Preference Testing" style="width:auto;">
+      </picture>
+    </div>
+
+    <div class="container">
+      <h2>Visual Design</h2>
+      <p>The Ink Tank site will have a lot of imagery as one of the reasons people will visit is for inspiration for their new tattoo. In order to make the site clear and not cluttered, white space will be used to separate content. The colour palette
+        will be simple so that attention is not drawn away from the images. 
+      </p>
+    </div>
+
+    <div class="inktank-visual-design">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/ink-tank/visual-design-desktop.png">
+        <img src="./img/ink-tank/visual-design.png" alt="Visual Design" style="width:auto;">
+      </picture>
+    </div>
 
   </main>
 
@@ -360,12 +364,8 @@
       <div class="copyright">Copyright Emma Searle 2020</div>
     </div>
   </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
-</body>
 </body>
 
 </html>
