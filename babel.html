@@ -3,12 +3,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
   <!-- Styling -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
- <script src="https://kit.fontawesome.com/5cec1500ec.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5cec1500ec.js" crossorigin="anonymous"></script>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -19,44 +20,43 @@
   <meta name="theme-color" content="#ffffff">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
   <title>Babel</title>
 </head>
 
 <body>
   <header>
     <div id="header">
-        <div class="header-container">
-          <div class="navtoggle" id="myNavtoggle">
-            <a href="index.html" class="logo" style="display:block;">
-              <img src="./img/logos/Logo1.png" alt="logo">
-            </a>
-      <nav>
-        <ul>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-          <li><a href="index.html#my-work" onclick="myFunction()">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="myFunction()">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo" style="display:block;">
+            <img src="./img/logos/Logo1.png" alt="logo">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+              <li><a href="index.html#my-work" onclick="myFunction()">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
   </header>
 
 
   <main>
     <div class="babel-banner">
       <picture>
-        <source srcset="./img/babel/overview desktop.jpg">
-        <img src="./img/babel/babel-banner.png" alt="Babel App">
+        <source media="(min-width:641px)" srcset="./img/babel/banner-desktop.png">
+        <img src="./img/babel/banner.png" alt="Babel App" style="width:100%;">
       </picture>
     </div>
 
     <div class="babel-logo">
-      <picture style="max-width:200px">
-        <source srcset="./img/babel/logo desktop.png">
-        <img src="./img/babel/logo desktop.png" alt="Babel App">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/babel/logo-desktop.png">
+        <img src="./img/babel/logo.png" alt="Babel Logo" style="width:auto;">
       </picture>
     </div>
 
@@ -72,13 +72,12 @@
       <p>The challenge of this project was to design an app from scratch in 50 hours. Due to the time constraints I focussed on creating three features for the site which included creating a category, adding a new word to the app and a game to
         reinforce learning.
       </p>
-    </div>
-
-    <div class="babel-design-process">
-      <picture style="max-width:100%">
-        <source srcset="./img/babel/design process desktop.png">
-        <img src="./img/babel/design process desktop.png" alt="Babel App">
-      </picture>
+      <div class="babel-design-process">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/babel/design-process-desktop.png">
+          <img src="./img/babel/design-process.png" alt="Design Process" style="width:auto;">
+        </picture>
+      </div>
     </div>
 
     <div class="container">
@@ -104,56 +103,62 @@
       <p>From the interviews I defined the goals and needs of my potential users and created a user persona to represent the different audience of Babel. This persona helped me through the development of my site to test assumptions and highlight
         problems.
       </p>
-      <div class="user-persona">
-        <picture style="max-width:100%">
-          <source srcset="./img/babel/user persona desktop.png">
-          <img src="./img/babel/user persona desktop.png" alt="Babel App">
+      <div class="babel-user-persona">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/babel/user-persona-desktop.png">
+          <img src="./img/babel/user-persona.png" alt="User Persona">
         </picture>
       </div>
+    </div>
 
+  <div class="container">
       <h3>User Flow</h3>
       <p>I created user flows to set out the paths that users will follow as they navigate through Babel app to learn a new language. The user flow below shows the path users will take to create a new category.
       </p>
-    </div>
-    <div class="user-flow">
-      <picture style="max-width:100%">
-        <source srcset="./img/babel/userflow desktop.png">
-        <img src="./img/babel/userflow desktop.png" alt="Babel App">
+    <div class="babel-user-flow">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/babel/user-flow-desktop.png">
+        <img src="./img/babel/user-flow.png" alt="User Flow" style="width:auto;">
       </picture>
     </div>
+      </div>
 
     <div class="container">
       <h2>Design & Testing</h2>
       <h3>Wireframes</h3>
       <p>I started brainstorming ideas with the crazy 8s technique. </p>
-      <div class="wireframes">
-        <picture style="max-width:100%">
-          <source srcset="./img/babel/wireframes desktop.png">
-          <img src="./img/babel/wireframes desktop.png" alt="Babel App">
+      <div class="babel-wireframes">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/babel/wireframes-desktop.png">
+          <img src="./img/babel/wireframes.png" alt="Wireframes" style="width:auto;">
         </picture>
       </div>
+    </div>
 
+    <div class="container">
       <h3>Prototypes</h3>
       <p>I then put together paper prototypes of the three core features. Below is an example if the paper prototype for adding a new category and word (flashcard) to the app.
       </p>
-
-      <div class="paper-prototype">
-        <picture style="max-width:100%">
-          <source srcset="./img/babel/paper prototype desktop.png">
-          <img src="./img/babel/paper prototype desktop.png" alt="Babel App">
+      <div class="babel-paper-prototype">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/babel/paper-prototype-desktop.png">
+          <img src="./img/babel/paper-prototype.png" alt="Paper Prototype" style="width:auto;">
         </picture>
       </div>
+    </div>
 
+    <div class="container">
       <p>From this I created an interactive prototype using Marvel so that I could test my design with users.
       </p>
-
-      <div class="marvel-prototype">
-        <picture style="max-width:100%">
-          <source srcset="./img/babel/marvel prototype desktop.png">
-          <img src="./img/babel/marvel prototype desktop.png" alt="Babel App">
+      <div class="babel-marvel-prototype">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/babel/marvel-prototype-desktop.png">
+          <img src="./img/babel/marvel-prototype.png" alt="Marvel Prototype" style="width:auto;">
         </picture>
       </div>
+    </div>
 
+    <div class="container">
       <h3>Usability Testing</h3>
       <p>I carried out a moderated in-person usability test (Mobile Navigation) using Marvel. I conducted the test with three participants from my target audience, recruited through my personal network.
       </p>
@@ -167,34 +172,30 @@
       <p>From the user tests there was one particular issue that was identified. The participants found it difficult to navigate the “flashcard page.” They commented that there was a lot of content on the page and it was not clear where they needed
         to click to add their new word.
       </p>
-
-      <div class="usability-testing">
-        <picture style="max-width:100%">
-          <source srcset="./img/babel/usability testing desktop.png">
-          <img src="./img/babel/usability testing desktop.png" alt="Babel App">
+      <div class="babel-usability-testing">
+        <picture>
+          <source media="(min-width:641px)" srcset="./img/babel/usability-testing-desktop.png">
+          <img src="./img/babel/usability-testing.png" alt="Usability Testing" style="width:auto;">
         </picture>
       </div>
+    </div>
 
-      <div class="container">
-        <p>I revised the screen by firstly adding a heading to the top to remind people of the task they are carrying out. Secondly I put the instructions outside of the text boxes, so that they won’t disappear when the user starts to type. I have
-          also
-          given examples so that the user has more information with regards to what they should be writing in the boxes. Finally, I added a shadow to the “add image” and “add audio” buttons, to show to the user that they are able to click these
-          buttons.
-        </p>
-      </div>
+    <div class="container">
+      <p>I revised the screen by firstly adding a heading to the top to remind people of the task they are carrying out. Secondly I put the instructions outside of the text boxes, so that they won’t disappear when the user starts to type. I have
+        also
+        given examples so that the user has more information with regards to what they should be writing in the boxes. Finally, I added a shadow to the “add image” and “add audio” buttons, to show to the user that they are able to click these
+        buttons.
+      </p>
+    </div>
 
-      <div class="container">
-        <h2>Conclusion</h2>
-        <p>Three functions were created to help people learn a new language by adding a new category, adding a new word to the app and playing a game to reinforce learning. Users were able to easily navigate the game and create a new category,
-          however the process of adding a new word needed some revision as users struggled with this task. Having re-designed this page, it would be necessary to carry out another user test to ensure that users are able to easily add a new word to
-          their vocabulary.
-        </p>
-      </div>
+    <div class="container">
+      <h2>Conclusion</h2>
+      <p>Three functions were created to help people learn a new language by adding a new category, adding a new word to the app and playing a game to reinforce learning. Users were able to easily navigate the game and create a new category,
+        however the process of adding a new word needed some revision as users struggled with this task. Having re-designed this page, it would be necessary to carry out another user test to ensure that users are able to easily add a new word to
+        their vocabulary.
+      </p>
+    </div>
   </main>
-
-
-
-
 
   <footer id="contact">
     <div class="container">
@@ -226,12 +227,8 @@
       <div class="copyright">Copyright Emma Searle 2020</div>
     </div>
   </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
-</body>
 </body>
 
 </html>
