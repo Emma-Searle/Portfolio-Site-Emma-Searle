@@ -553,6 +553,10 @@ main {
   padding: 10px;
 }
 
+.project-text-box {
+  margin-left: 20px;
+}
+
 .thumbnail-image {
   width: 100%;
   margin: 20px;
