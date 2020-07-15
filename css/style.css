@@ -553,9 +553,13 @@ main {
   padding: 10px;
 }
 
+.project-text-box {
+  margin-left: 20px;
+}
+
 .thumbnail-image {
   width: 100%;
-margin: 20px;
+  margin: 20px;
 }
 
 .thumbnail-image img {
@@ -573,20 +577,20 @@ margin: 20px;
 }
 
 /* Babel page */
-.babel-banner {
+.babel-banner img {
   padding: 0;
   width: 100%;
   margin: 0;
 }
 
-.babel-logo {
+.babel-logo img {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.babel-design-process {
+.babel-design-process img {
   padding: 20px 15px;
   display: flex;
   justify-content: center;
@@ -599,34 +603,34 @@ margin: 20px;
   justify-content: center;
 }
 
-.babel-user-flow {
+.babel-user-flow img {
   padding: 20px 15px;
   display: flex;
   justify-content: center;
 }
 
-.babel-wireframes {
+.babel-wireframes img {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.babel-paper-prototype {
+.babel-paper-prototype img {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.babel-marvel-prototype {
+.babel-marvel-prototype img {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.babel-usability-testing {
+.babel-usability-testing img {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -859,9 +863,10 @@ Medium devices (641px and larger)
     padding: 15px;
   }
 
-.navtoggle.responsive li {
-  padding: 0;
-}
+  .navtoggle.responsive li {
+    padding: 0;
+  }
+
   .navtoggle li:not(:first-child) {
     display: inline-block;
   }
@@ -879,10 +884,6 @@ Medium devices (641px and larger)
     padding-top: 78px;
   }
 
-  .project-text-box {
-    margin-left: 20px;
-  }
-
   .cvbutton {
     padding-left: 100px;
     padding-right: 100px;
@@ -893,7 +894,7 @@ Medium devices (641px and larger)
     padding: 20px;
   }
 
-  /* Babel */
+  /* Babel images
   .babel-logo img {
     max-width: 200px;
   }
@@ -941,8 +942,8 @@ Medium devices (641px and larger)
     max-width: 70%;
     margin: 0 auto;
 }
-
-  /* Ink Tank */
+*/
+  /* Ink Tank images
 
   .inktank-design-process img {
     display: flex;
@@ -984,13 +985,12 @@ Medium devices (641px and larger)
     max-width: 90%;
     margin: 0 auto;
   }
-
+*/
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
@@ -1012,19 +1012,20 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  /* Babel */
+  /* Babel
   .babel-logo img {
     display: flex;
   justify-content: center;
     max-width: 250px;
     margin: 0 auto;
   }
-
-
-/* Ink Tank */
+*/
+  /* Ink Tank
 .inktank-design-process img {
   display: flex;
   justify-content: center;
   width: 75%;
   margin: 0 auto;
+}
+*/
 }
