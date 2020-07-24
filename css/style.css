@@ -136,6 +136,10 @@ a:active {
   width: 25px;
 }
 
+.item {
+  margin: 0;
+}
+
 @keyframes slide1 {
 
   0%,
@@ -569,10 +573,6 @@ main {
   padding: 10px;
 }
 
-.project-text-box {
-  margin-left: 20px;
-}
-
 .thumbnail-image {
   display: flex;
   justify-content: center;
@@ -916,6 +916,10 @@ Medium devices (641px and larger)
     padding: 10px;
   }
 
+  .project-text-box {
+    margin-left: 20px;
+  }
+  
   /* Babel images
   .babel-logo img {
     max-width: 200px;
