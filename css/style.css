@@ -22,7 +22,10 @@ body {
   color: #121640;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -84,7 +87,7 @@ a:active {
   position: relative;
 }
 
-.projectbutton1 {
+.purple-project-button {
   background-color: #f1f3f6;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
@@ -100,12 +103,12 @@ a:active {
   width: 190px;
 }
 
-.projectbutton1:hover {
+.purple-project-button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.projectbutton2 {
+.pink-project-button {
   background-color: #ffffff;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
@@ -121,12 +124,12 @@ a:active {
   width: 190px;
 }
 
-.projectbutton2:hover {
+.pink-project-button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.arrow1 {
+.moving-arrow {
   animation: slide1 1s ease-in-out infinite;
   margin-left: 9px;
   vertical-align: bottom;
@@ -145,22 +148,22 @@ a:active {
   }
 }
 
-.projectbutton1:hover {
+.purple-project-button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.projectbutton2:hover {
+.pink-project-button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.projectbutton1:active {
+.purple-project-button:active {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.projectbutton2:active {
+.pink-project-button:active {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -267,14 +270,22 @@ a:active {
   margin-right: auto;
 }
 
-.container1 {
+.grey-container {
   width: 100%;
   background-color: #f1f3f6;
 }
 
-.container2 {
+.grey-container h2 {
+  margin-top: 0;
+}
+
+.white-container {
   width: 100%;
   background-color: #ffffff;
+}
+
+.white-container h2 {
+  margin-top: 0;
 }
 
 .row1 {
@@ -302,6 +313,10 @@ a:active {
 #work h1 {
   padding-top: 25px;
   margin-bottom: 0;
+}
+
+#work h2 {
+  margin-top: 0;
 }
 
 #about-blurb h2 {
@@ -510,7 +525,8 @@ nav>ul>li>a:active {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -549,7 +565,7 @@ main {
 }
 
 [class*="col-"] {
-  float: left;
+  float: center;
   padding: 10px;
 }
 
@@ -558,12 +574,13 @@ main {
 }
 
 .thumbnail-image {
-  width: 100%;
-  margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .thumbnail-image img {
   border-radius: 10px;
+  max-width: 100%;
 }
 
 /* About page */
@@ -894,6 +911,11 @@ Medium devices (641px and larger)
     padding: 20px;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
   /* Babel images
   .babel-logo img {
     max-width: 200px;
@@ -1010,6 +1032,11 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .thumbnail-image {
+    width: 100%;
+    padding: 0 20px;
   }
 
   /* Babel
