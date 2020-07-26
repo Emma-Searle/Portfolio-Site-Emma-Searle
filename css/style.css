@@ -5,7 +5,7 @@ Secondary Colour (Pink): #e40784;
 Text Colour (Dark Blue): #121640;
 Background (white): #ffffff
 Background (grey): #f1f3f6
-Colour (Blue): #4c0bd1;
+Colour (Purple): #4c0bd1;
 Colour (Light Pink): #FFF5FA;
 
 */
@@ -52,6 +52,15 @@ h3 {
 
 img {
   width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
 }
 
 /* =================
@@ -327,6 +336,7 @@ a:active {
   text-align: center;
 }
 
+
 .social-links {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -393,8 +403,9 @@ a:active {
   background-color: #4667ff;
   text-align: center;
   color: #ffffff;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
+  margin-top: 40px;
 }
 
 #contact .container {
@@ -600,7 +611,7 @@ main {
   margin: 0;
 }
 
-.babel-logo img {
+.babel-logo {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -750,6 +761,120 @@ main {
   display: flex;
   justify-content: center;
 }
+
+/* Portfolio website page */
+
+.portfolio-design-process {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-colour-palette {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-typography {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-rounded-corners {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-linter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+.portfolio-homepage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-about-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-project-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    max-width: 100%;
+}
+
+.portfolio-contact-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.portfolio-navigation-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.portfolio-responsive-project-display {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.portfolio-responsive-navigation {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.portfolio-accessibility {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
 
 /* Animation */
 @keyframes color-change {
