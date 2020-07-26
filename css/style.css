@@ -54,6 +54,15 @@ img {
   width: 100%;
 }
 
+video {
+  max-width: 100%;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
 /* =================
 Links and buttons
 ==================== */
@@ -323,6 +332,7 @@ a:active {
   text-align: center;
 }
 
+
 .social-links {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -389,8 +399,9 @@ a:active {
   background-color: #4667ff;
   text-align: center;
   color: #ffffff;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
+  margin-top: 40px;
 }
 
 #contact .container {
@@ -600,7 +611,7 @@ main {
   margin: 0;
 }
 
-.babel-logo img {
+.babel-logo {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
