@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5cec1500ec.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <div class="header-container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo" style="display:block;">
+            <img src="./img/logos/Logo1.png" alt="logo">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+              <li><a href="index.html" onclick="myFunction()">Home</a></li>
+              <li><a href="index.html#my-work" onclick="myFunction()">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Portfolio Website Case Study</h1>
+    </div>
+
+    <div class="container">
+      <h2> Overview </h2>
+      <p> Having recently qualified as a UX designer I wanted to develop my skills further by taking a course in frontend development in order to understand the limitations of design elements and better communicate with developers when working in a
+        team.
+      </p>
+      <p>As I have been building a portfolio of design work over the last few months I needed a platform to showcase my work while also giving further insight into my personality for potential employers and peers in the field. As current portfolio
+        display sites do not have many elements of personalisation, I decided to build a responsive website from scratch in order to meet these needs and develop my skills.
+      </p>
+      <p>I developed a site that was clear and succinct so that it was easy to navigate. My primary colour is blue to invoke a sense of trustworthiness, yet I added a splash of pink to display a little more of my personality. Images have rounded
+        edges to continue with the friendly, approachable nature. Text fonts were chosen on their legibility and accessibility. Colours were also adjusted from the initial selection to ensure that they met the WCAG contrast ratio guidelines.
+      </p>
+      <p>The site is developed as a fully responsive website to ensure that the experience is smooth over each device it is viewed on. Using JavaScript, a hamburger menu was created to replace the navigation bar on mobile viewing.
+      </p>
+      <p>There are a number of interactive elements to improve the users experience, such as text colour changes, strikethrough text and enlarging buttons when the user hovers or clicks them. There is also a fun, moving arrow animation which takes
+        the user to project pages. These elements were created using CSS.
+      </p>
+      <p>After usability testing, further adjustments were made to the site to ensure that it is easily accessible and each element is inline with my brand.
+      </p>
+    <div class="portfolio-design-process">
+      <picture>
+        <source media="(min-width:641px)" srcset="./img/portfolio-website/design-process-desktop.png">
+        <img src="./img/portfolio-website/design-process.png" alt="Design process" style="width:auto;">
+      </picture>
+    </div>
+  </div>
+
+    <div class="container">
+      <h2>Context & Challenge</h2>
+      <h3>Background</h3>
+      <p>As a certified UX designer I wanted to further develop my skills by expanding my knowledge of frontend development. These skills would be useful to understand the limitations of design elements and better communicate with developers during
+        projects. The aim was to create a responsive portfolio website to display recent projects to potential employers and peers in the design field, while building my knowledge of industry-standard systems and web development methodologies. The
+        project was to take 8 weeks to complete.
+      </p>
+      <h3>The problem</h3>
+      <p>As a recently qualified UX designer I needed a platform to display my work yet also share my personality with potential employers and peers. As current portfolio display platforms do not allow for much personalisation, developing a website
+        to display my work would allow me to communicate my skills as a designer and developer, while also giving me the opportunity to share aspects of my personality with potential employers and peers.
+      </p>
+      <h3>Goals</h3>
+      <ul>
+      <li>To expand on my frontend development skills and gain proficiency in HTML page structure, CSS style sheets, text editors and linters, responsive design using media queries, interaction design, & JavaScript data types, libraries and plugins.
+      </li>
+      <li>To create a visually appealing yet clear display of my recent projects.
+      </li>
+      <li>To display my skills in frontend development.</li>
+    </ul>
+  </div>
+
+<div class="container">
+<h2>Process and Insight</h2>
+<p>Before I started building the site I made a plan of the information I needed for the site, including the content, colour scheme and typography. I then created a few wireframes to create the look and feel of the site and to try different options.
+</p>
+<p>The colour palette is mostly blue as this conveys a feeling of trustworthiness. I wanted to add a splash of pink to add my personality to the site.
+</p>
+<div class="portfolio-colour-palette">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/colour-palette-desktop.png">
+    <img src="./img/portfolio-website/colour-palette.png" alt="Colour palette" style="width:auto;">
+  </picture>
+</div>
+<p>The following fonts were chosen because they have clear lines, are succinct and easy to read. Open Sans is the font used for the body of my text as it is accessible for all users, including those with dyslexia.
+</p>
+<div class="portfolio-typography">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/typography-desktop.png">
+    <img src="./img/portfolio-website/typography.png" alt="Typography" style="width:auto;">
+  </picture>
+</div>
+<p>The overall feel of the site is clear and succinct. Images will have rounded edges to give a friendly feel and content is well spaced to ensure distinct sections. The site was designed from a mobile first approach, while testing the site on larger screens throughout development.
+</p>
+<div class="portfolio-rounded-corners">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/rounded-corners-desktop.png">
+    <img src="./img/portfolio-website/rounded-corners.png" alt="Example of image with rounded corners" style="width:auto;">
+  </picture>
+</div>
+<p>As someone new to frontend development I started with the basics in learning HTML to set the structure of my website. I then added a CSS stylesheet to bring my site to life and later added Javascript to add interactive elements to improve the user experience. In order to check my code for errors I used W3C-validation, linter-stylelint and linter-js-standard, as well as atom beautify to ensure my code was formatted correctly. When running a check on my site I realised that there was an issue with the way my images were formatted, by not having a smaller image to view on mobile and a larger image for tablet and desktop view. I therefore had to create two separate images for each view, which took a little longer than expected!
+</p>
+<div class="portfolio-linter">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/linter-desktop.png">
+    <img src="./img/portfolio-website/linter.png" alt="Linter" style="width:auto;">
+  </picture>
+</div>
+<p>Once my code was in good shape I decided to undertake a user test on my site, to ensure that there were no issues navigating through the content. From the tests I felt that I needed to add a “home” tab rather than assuming users would navigate home using the logo in the top left corner. I also changed the downloadable CV to be more on-brand with the site. A few of the participants mentioned that if there were more projects to view, it may be too much to display them all on the homepage as this would require a lot of scrolling. In the future, once I have built my portfolio up further, I will consider having a separate page for all projects and only display the top five on the homepage.
+</p>
+</div>
+
+<div class="container">
+  <h2>Solution</h2>
+  <h3>Homepage</h3>
+<p>The homepage has the distinct “drip” logo running across the top of the page, with the signature writing of my name underneath. This is to keep in line with my personal brand, as this logo can be viewed on my other social media sites. The logo also injects a little more personality to the site and introduces the pink colour.
+</p>
+<div class="portfolio-logo">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/drip-logo-desktop.png">
+    <img src="./img/portfolio-website/drip-logo.png" alt="Drip logo" style="width:auto;">
+  </picture>
+</div>
+<p>The projects are displayed in rows, with a subtle change in background colour for each project, to make it clear that they are distinct. A short description accompanies each project to give the viewer an  insight into the work carried out, and there is a button to take the user to the full project details.
+ </p>
+ <div class="portfolio-homepage">
+   <picture>
+     <source media="(min-width:641px)" srcset="./img/portfolio-website/homepage-desktop.png">
+     <img src="./img/portfolio-website/homepage.png" alt="Homepage image" style="width:auto;">
+   </picture>
+ </div>
+<h3>About Page</h3>
+  <p>The about page is the place where the user can really get to know me! There is an image of me at the top in order to add a little more personalisation to the site and a description of my background underneath. I have added a link to my CV on this page so that potential employers have easy access to my past experience. There is also a list of my skills so that the viewer can easily identify my capabilities. Rather than adding another list of the tools I have used, I added an image of these to break up the amount of text on the page.</p>
+  <div class="portfolio-about-page">
+    <picture>
+      <source media="(min-width:641px)" srcset="./img/portfolio-website/about-page-desktop.png">
+      <img src="./img/portfolio-website/about-page.png" alt="About page image" style="width:auto;">
+    </picture>
+  </div>
+<h3>Project Pages</h3>
+  <p>The project pages each follow the same format to ensure that there is consistency when navigating the site. For each project there is a description of the process and image examples of the work to keep the viewer’s interest.
+</p>
+<div class="portfolio-project-page">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/project-page-desktop.png">
+    <img src="./img/portfolio-website/project-page.png" alt="Project page image" style="width:auto;">
+  </picture>
+</div>
+  <h3>Contact Section</h3>
+  <p>At the bottom of each page is a contact section so that viewers can reach out to me via email or connect with me on LinkedIn, Github or Behance. I decided to add a link to the contact section in the navigation bar so that viewers always have easy access to contact information.
+</p>
+<div class="portfolio-contact-section">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/contact-section-desktop.png">
+    <img src="./img/portfolio-website/contact-section.png" alt="Contact section" style="width:auto;">
+  </picture>
+</div>
+<h3>Navigation Bar</h3>
+<p>At the top of the screen is a navigation bar to direct viewers to the homepage, work, about and contact information. The logo in the top left corner also links to the homepage. This information is clearly presented on a white background to ensure that users can see the information clearly. I also decided to make the navigation bar sticky, so that it follows the viewer down the screen. This ensures the user always has access to the different areas of the site and minimises the time they spend navigating to each page.</p>
+<div class="portfolio-navigation-bar">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/navigation-bar-desktop.png">
+    <img src="./img/portfolio-website/navigation-bar.png" alt="Navigation bar" style="width:auto;">
+  </picture>
+</div>
+<h3>Responsive</h3>
+<p>The site was designed mobile first however it can easily be viewed on all devices. Smaller images are linked to mobile viewing to ensure that the viewer does not have to wait for the display of unnecessarily large images. Images on mobile have been adjusted slightly to those viewed on larger screens to ensure that all content is viewed clearly and annotations are readable, for example in the case of diagrams.
+</p>
+  <p>On the homepage, the project work is displayed with image over text on mobile view and image beside text on larger screens. This is to ensure the space on the page is used correctly.
+</p>
+<div class="portfolio-responsive-project-display">
+  <picture>
+    <source media="(min-width:641px)" srcset="./img/portfolio-website/responsive-project-display-desktop.png">
+    <img src="./img/portfolio-website/responsive-project-display.png" alt="Responsive navigation" style="width:auto;">
+  </picture>
+</div>
+<p>On mobile sites the navigation bar is condensed into a hamburger where users can then click to see the navigation options. A hamburger menu was chosen as this is widely recognised by most people. This adaptation was created using JavasScript.
+</p>
+    <div class="portfolio-responsive-navigation">
+    <picture>
+      <source media="(min-width:641px)" srcset="./img/portfolio-website/responsive-navigation-desktop.png">
+      <img src="./img/portfolio-website/responsive-navigation.png" alt="Responsive navigation" style="width:auto;">
+    </picture>
+  </div>
+<h3>Interactive</h3>
+  <p>A number of interactive elements have been added to the site to improve the user experience. When the viewer hovers over a link in the navigation bar the link turns from blue to pink and a strike through line moves from one side of the word to the other. This highlights to the user that they have hovered over a link.
+</p>
+  <p>In the contact section of the page, when the user hovers or clicks on a button the button enlarges. Again this makes it visually clear to the viewer that they have hovered or clicked a button. It also makes details of the button more visible to the user.
+</p>
+  <p>On the homepage, if the user wants to view a project they can click the “view project” button. The “view project” button is displayed in a secondary colour and has a moving arrow next to the text. The aim of the moving arrow is to draw the user’s attention to this button and entice them into viewing the project.
+</p>
+<p>These interactions were all created using CSS animations.
+</p>
+<p>The navigation is visible at the top of the page at all times, however when the viewer starts to scroll down the page a shadow appears underneath the bar in order to make it more prominent. This interaction was created using JavaScript.
+</p>
+<p>Take a look at the video below to see the interactive elements in action!</p>
+</div>
+
+<div class="video">
+<video width="800" height="500" controls>
+  <source src="./video/portfolio-website-video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<div class="container">
+<h3>Accessible</h3>
+  <p>Open Sans font was used for the body text as this font is accessible to all users, including those with dyslexia.
+</p>
+  <p>Each text and background colour have been tested to ensure they reach the WCAG AA required ratio. I had to make some changes to my initial colour palette to ensure that these standards were met. Please see the table below for the changes made.
+</p>
+<div class="portfolio-accessibility">
+<picture>
+  <source media="(min-width:641px)" srcset="./img/portfolio-website/accessibility-desktop.png">
+  <img src="./img/portfolio-website/accessibility.png" alt="Accessibility" style="width:auto;">
+</picture>
+</div>
+<p>On each image is descriptive alt text to ensure that those using a screen reader are able to understand the context of the images. If an image is unavailable the alt text will also help viewers to understand what image should have been in place.
+</p>
+</div>
+
+<div class="container">
+<h2>Results</h2>
+<ul>
+<li>I have successfully created a responsive portfolio site using HTML, CSS and JavaScript. Code was checked for errors using linters and adjusted accordingly.
+</li>
+<li>From user testing my site the feedback gathered suggested that my site was visually appealing yet easy to navigate. Usability issues that arose during testing were amended for a more positive user experience.
+</li>
+<li>My frontend development skills are displayed throughout the site. </li>
+</ul>
+</div>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h1> Say Hello!</h1>
+      <p>
+        Do you want to get in touch?
+      </p>
+      <a href="mailto:emmasearle.ux@gmail.com" class="messagebutton">Email Me</a>
+      <p>
+        or connect with me on social
+      </p>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.linkedin.com/in/emma-searle/" target="_blank" class="contact-icon" style="display:block;">
+            <img src="./img/contact/linkedin.svg" alt="logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/emmasearle" target="_blank" class="contact-icon" style="display:block;">
+            <img src="./img/contact/behance.svg" alt="logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Emma-Searle" target="_blank" class="contact-icon" style="display:block;">
+            <img src="./img/contact/github.svg" alt="logo">
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">Copyright Emma Searle 2020</div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
