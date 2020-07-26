@@ -433,6 +433,10 @@ a:active {
   padding: 10px;
 }
 
+.drip-logo {
+max-width: 100%;
+}
+
 .contact-icon {
   width: 15%;
   max-width: 75px;
