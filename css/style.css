@@ -51,7 +51,7 @@ h3 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 video {
@@ -352,6 +352,7 @@ a:active {
 
 .social-links li img {
   width: 50px;
+  max-width: fit-content;
   position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -434,7 +435,7 @@ a:active {
 }
 
 .drip-logo {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .contact-icon {
@@ -1048,7 +1049,7 @@ Medium devices (641px and larger)
   .project-text-box {
     margin-left: 20px;
   }
-  
+
   /* Babel images
   .babel-logo img {
     max-width: 200px;
