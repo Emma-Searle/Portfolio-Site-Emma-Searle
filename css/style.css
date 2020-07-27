@@ -61,6 +61,8 @@ video {
 .video {
   display: flex;
   justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* =================
@@ -303,7 +305,7 @@ a:active {
 
 .row1 {
   background-color: #f1f3f6;
-  padding: 50px;
+  padding: 15px;
 }
 
 .row1::after {
@@ -314,7 +316,7 @@ a:active {
 
 .row2 {
   background-color: #ffffff;
-  padding: 50px;
+  padding: 15px;
 }
 
 .row2::after {
@@ -981,15 +983,15 @@ Medium devices (641px and larger)
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   h2 {
-    font-size: 1.9em;
+    font-size: 1.4em;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   nav>ul>li {
@@ -1048,6 +1050,11 @@ Medium devices (641px and larger)
 
   .project-text-box {
     margin-left: 20px;
+  }
+
+  video {
+    width: 800px;
+    height: 500px;
   }
 
   /* Babel images
