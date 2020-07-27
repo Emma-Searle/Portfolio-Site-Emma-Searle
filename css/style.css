@@ -288,6 +288,8 @@ a:active {
 .grey-container {
   width: 100%;
   background-color: #f1f3f6;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .grey-container h2 {
@@ -297,6 +299,8 @@ a:active {
 .white-container {
   width: 100%;
   background-color: #ffffff;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .white-container h2 {
@@ -326,7 +330,7 @@ a:active {
 }
 
 #work h1 {
-  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 0;
 }
 
@@ -1056,99 +1060,6 @@ Medium devices (641px and larger)
     width: 800px;
     height: 500px;
   }
-
-  /* Babel images
-  .babel-logo img {
-    max-width: 200px;
-  }
-
-.babel-user-persona img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.babel-design-process img {
-  display: flex;
-    justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.babel-wireframes img {
-  display: flex;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.babel-paper-prototype img {
-  display: flex;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.babel-marvel-prototype img {
-  display: flex;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.babel-usability-testing img {
-  display: flex;
-  justify-content: center;
-    max-width: 70%;
-    margin: 0 auto;
-}
-*/
-  /* Ink Tank images
-
-  .inktank-design-process img {
-    display: flex;
-  justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .inktank-competitor-analysis img {
-    display: flex;
-  justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .inktank-user-personas img {
-    display: flex;
-  justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .inktank-dendrogram img {
-    display: flex;
-  justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .inktank-similarity-matrix img {
-    display: flex;
-  justify-content: center;
-    max-width: 75%;
-    margin: 0 auto;
-  }
-  .inktank-visual-design img {
-    display: flex;
-  justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-*/
 }
 
 /* ==============================
@@ -1179,21 +1090,4 @@ Large devices (1024px or larger)
     width: 100%;
     padding: 0 20px;
   }
-
-  /* Babel
-  .babel-logo img {
-    display: flex;
-  justify-content: center;
-    max-width: 250px;
-    margin: 0 auto;
-  }
-*/
-  /* Ink Tank
-.inktank-design-process img {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  margin: 0 auto;
-}
-*/
 }
