@@ -358,7 +358,7 @@ a:active {
 
 .social-links li img {
   width: 50px;
-  max-width: fit-content;
+  max-width: inherit;
   position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
